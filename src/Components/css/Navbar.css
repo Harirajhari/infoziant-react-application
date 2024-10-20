@@ -1,0 +1,109 @@
+/* Base styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 2%;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(14, 14, 14, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.infz-logo {
+  filter: invert(100%) brightness(2);
+  width: 70%;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #15F5BA;
+}
+
+.mobile-nav-menu{
+  display: none;
+}
+
+/* Navbar.css */
+.navbar .nav-links a.active,
+.mobile-nav-menu a.active {
+  color: #15F5BA; /* Highlight the active link with a different color */
+  font-weight: bold; /* You can also add bold styling */
+}
+
+
+/* Mobile-specific styles */
+@media (max-width: 400px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .mobile-bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+  }
+
+  .mobile-nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 60%;
+    background: linear-gradient(to right, #010b14, #000000);
+    color: white;
+    padding: 20px;
+    z-index: 1000;
+    transition: transform 0.5s ease;
+    transform: translateX(100%);
+  }
+
+  .mobile-nav-menu.open {
+    transform: translateX(0%);
+  }
+
+  .mobile-close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .mobile-nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .mobile-nav-menu a:hover {
+    color: #15F5BA;
+  }
+}

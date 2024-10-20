@@ -1,0 +1,133 @@
+.category-container-award {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 5%;
+    color: white;
+  }
+
+  .award-desc{
+    color: white;
+  }
+  
+  .category-award {
+    background: transparent;
+    border: none;
+    color: black;
+    padding: 10px 20px;  /* Ensure consistent padding */
+    margin: 0 10px;      /* Add margin between buttons */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-bottom 0.3s; /* Smooth transition */
+    border-bottom: 2px solid transparent; /* Add underline effect */
+  }
+  
+  .category-award:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Subtle hover effect */
+  }
+  
+  .active-award {
+    border-bottom: 2px solid black; /* Underline the active category */
+  }
+  
+  .card-grid-award {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Keep consistent 3-column layout */
+    gap: 30px;
+    padding: 20px;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  
+  .card-award {
+    background: linear-gradient(to right, #010b14, #000000);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card-award:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-image-award {
+    width: 100%;               
+    height: auto;              
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .card-title-award {
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .card-description-award {
+    color: white;
+    font-size: 14px;
+  }
+
+  /* Modal container */
+.modal-award {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  /* Modal content */
+  .modal-content-award {
+    position: relative;
+    width: 50%;         /* Reduce to 50% of the viewport width */
+    height: 50%;        /* Reduce to 50% of the viewport height */
+    padding: 0;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-image-award {
+    width: 100%;        /* Full width of the modal content (50% of the screen width) */
+    height: 100%;       /* Full height of the modal content (50% of the screen height) */
+    object-fit: contain; /* Ensure the image scales properly without distortion */
+    border-radius: 0;   /* No border radius for a clean look */
+  }
+  
+  /* Close button */
+  .close-award {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    z-index: 1001;
+  }
+  
+  .close-award:hover {
+    color: red;
+  }
+
+  @media(max-width:400px){
+    .category-award{
+      font-size: 11px;
+      padding: 0;
+    }
+    .card-grid-award{
+      display: block;
+    }
+    .card-award{
+      margin-bottom: 4%;
+    }
+  }
+  

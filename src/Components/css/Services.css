@@ -1,0 +1,121 @@
+.services-section {
+    text-align: center;
+    height: 120vh;
+    padding: 3% 2%;
+    background-color: white;
+
+}
+
+.services-section-mobile {
+    display: none;
+  }
+
+.services-section h1{
+    color: black;
+    font-size: 30px;
+}
+
+.services-p{
+    color: #4f4a4a;
+    width: 60%;
+    margin: auto;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.services-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.slide-img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.vertical-line {
+    height: 300px;
+    width: 1px;
+    background-color: rgb(179, 177, 177); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px;
+}
+
+.item-id {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.service-text {
+    text-align: left;
+    width: 40%;
+    margin-left: 2%;
+    color: white;
+}
+
+.service-text h3{
+    background: linear-gradient(90deg, #15F5BA, #0066ff); 
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.service-text p{
+    color: #4f4a4a;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+
+/* responsiveness */
+@media (max-width: 400px) {
+    .services-section {
+      display: none;
+    }
+  
+    .services-section-mobile {
+        text-align: center;
+      display: block;
+      background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    padding: 4% 3%;
+    }
+    .services-section-mobile h1{
+        color: white;
+        font-size: 20px;
+    }
+    .services-p{
+        width: 100%;
+        line-height: 25px;
+        font-size: 15px;
+    }
+    .service-img-m{
+        width: 80vw;
+    }
+    .service-li-m{
+        padding: 2%;
+        border: 1px solid rgb(173, 170, 170);
+        border-radius: 8px;
+        margin-bottom: 5%;
+    }
+    .service-li-m h1{
+        background: linear-gradient(90deg, #15F5BA, #0066ff); 
+  -webkit-background-clip: text;
+  color: transparent;
+    }
+    .service-li-m p{
+        color: rgb(213 210 210);
+        font-size: 15px;
+    }
+  }
